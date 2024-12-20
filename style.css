@@ -1,0 +1,111 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with gradient background */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1c1c1c, #414141); /* Dark gradient */
+    color: white;
+    text-align: center;
+}
+
+/* Stopwatch container with soft rounded corners */
+.stopwatch-container {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Title style */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #eaeaea; /* Soft white color */
+    font-weight: bold;
+}
+
+/* Time display style */
+.time-display {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2196f3; /* Blue background for buttons */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    width: 90px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Laps list styling */
+.laps {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.laps li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #b0bec5;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .time-display {
+        font-size: 3rem; /* Smaller font size on mobile */
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
