@@ -12,14 +12,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #1c1c1c, #414141); /* Dark gradient */
+    background: linear-gradient(135deg, #1c1c1c, #414141); 
     color: white;
     text-align: center;
 }
 
 
 .stopwatch-container {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.6); 
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -30,11 +30,10 @@ body {
     transition: all 0.3s ease;
 }
 
-
 .title {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #eaeaea; /* Soft white color */
+    color: #eaeaea;
     font-weight: bold;
 }
 
@@ -54,7 +53,7 @@ body {
 }
 
 button {
-    background-color: #2196f3; /* Blue background for buttons */
+    background-color: #2196f3; 
     color: white;
     border: none;
     padding: 12px 24px;
@@ -76,7 +75,6 @@ button:active {
     transform: scale(0.98);
 }
 
-
 .laps {
     list-style-type: none;
     padding: 0;
@@ -94,10 +92,9 @@ button:active {
     color: #b0bec5;
 }
 
-
 @media (max-width: 600px) {
     .time-display {
-        font-size: 3rem; /* Smaller font size on mobile */
+        font-size: 3rem; 
     }
 
     .buttons {
